@@ -25,14 +25,7 @@
     </http>
   
     <authentication-manager >
-        <authentication-provider>
-            <user-service>
-                <user name="jack"  password="jack123"  authorities="ROLE_USER" />
-                <user name="admin" password="admin123" authorities="ROLE_ADMIN" />
-                <user name="dbaOnly" password="dba123" authorities="ROLE_DBA" />
-                <user name="dba" password="dba123" authorities="ROLE_ADMIN,ROLE_DBA" />
-            </user-service>
-        </authentication-provider>
+        <authentication-provider user-service-ref="myUserDetailsService" />
     </authentication-manager>
     
     
