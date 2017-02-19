@@ -17,7 +17,7 @@ import com.npf.service.UserService;
 import com.npf.util.State;
 
 @Service("myUserDetailsService")
-public class MyUserDetailsService implements UserDetailsService {
+public class MyUserDetailsServiceImpl implements UserDetailsService {
 
 	 @Autowired
 	 private UserService userService;
