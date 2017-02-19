@@ -23,7 +23,7 @@ public class User implements Serializable{
 	
 	private State state;
 	
-	private List<Role> role;
+	private List<Role> roleList;
 
 	public int getId() {
 		return id;
@@ -81,11 +81,11 @@ public class User implements Serializable{
 		this.state = state;
 	}
 
-	public List<Role> getRole() {
-		return role;
+	public List<Role> getRoleList() {
+		return roleList;
 	}
 
-	public void setRole(List<Role> role) {
-		this.role = role;
+	public void setRoleList(List<Role> roleList) {
+		this.roleList = roleList;
 	}
 }
