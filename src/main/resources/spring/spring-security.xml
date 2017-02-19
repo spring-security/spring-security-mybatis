@@ -19,8 +19,7 @@
         <form-login login-page="/login" 
         			username-parameter="ssoId" 
         			password-parameter="password"
-        			login-processing-url="/login"  
-        			authentication-success-handler-ref="mySimpleUrlAuthenticationSuccessHandler"    			
+        			login-processing-url="/login"      			
         			authentication-failure-url="/authenticationFailure"/>
     </http>
   
