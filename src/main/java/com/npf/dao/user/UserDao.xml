@@ -13,7 +13,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<result column="LAST_NAME" property="lastName"/>
 		<result column="EMAIL" property="email"/>
 		<result column="STATE" property="state"/>
-		<collection property="roleList">
+		<collection property="roleList" ofType="com.npf.entity.Role">
 			<id column="ROLE_ID" property="id"/>
 			<result column="ROLE_TYPE" property="roleType"/>
 		</collection>
